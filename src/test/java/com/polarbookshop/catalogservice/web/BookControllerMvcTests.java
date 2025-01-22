@@ -19,7 +19,8 @@ class BookControllerMvcTests {
     @Autowired
     private MockMvc mockMvc;
 
-    @MockBean
+    @SuppressWarnings("removal")
+	@MockBean
     private BookService bookService;
 
     @Test
